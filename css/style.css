@@ -96,7 +96,7 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--primary-title-color);
+    color: var(--title-color);
     transition: color 250ms var(--timing-function);
 }
 
@@ -832,8 +832,6 @@ main .text {
     transform: translateY(-290px);
     transition: transform 250ms var(--timing-function);
 }
-
-.card:hover.overlays {}
 
 .card {
     width: 370px;
