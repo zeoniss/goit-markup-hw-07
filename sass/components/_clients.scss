@@ -1,0 +1,45 @@
+.label:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: white;
+}
+
+.logotype {
+    display: flex;
+    margin-top: 50px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    min-width: 170px;
+    fill: var(--svg-color);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms var(--timing-function);
+}
+
+.icon:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.icon:active,
+.icon:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.brand {
+    transition: fill 250ms var(--timing-function);
+}
+
+.brand:hover {
+    fill: var(--accent-color);
+}

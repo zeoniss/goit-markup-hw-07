@@ -227,12 +227,6 @@ main .text {
     transition: border-color 250ms var(--timing-function);
 }
 
-
-/*
-.form-input:focus~.form-icon {
-    background-color: var(--accent-color);
-}*/
-
 .form-field:focus-within>.form-icon {
     color: var(--accent-color);
 }
@@ -404,6 +398,97 @@ main .text {
 
 /*Our team*/
 
+
+/*Контакты*/
+
+.contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contact>.item+.item {
+    margin-left: 30px;
+}
+
+.contact a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.header-font {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+
+/*чем мы занимаемся*/
+
+.doing {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    bottom: 11px;
+    left: 85px;
+}
+
+.doit {
+    position: relative;
+}
+
+.stripe {
+    content: '';
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.details>.box+.box {
+    margin-left: 30px;
+}
+
+.details>.space+.space {
+    margin-left: 30px;
+}
+
+.texts {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+/*Наша команда*/
+
 .team {
     background-color: white;
     padding-top: 94px;
@@ -545,103 +630,6 @@ main .text {
 .space {
     width: 370px;
 }
-
-
-/*Контакты*/
-
-.contact {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
-
-.contact>.item+.item {
-    margin-left: 30px;
-}
-
-.contact a {
-    list-style: none;
-    text-decoration: none;
-    color: var(--primary-color);
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-
-/*.contact a:hover,
-.contact a:focus {
-    color: var(--accent-color);
-}*/
-
-.header-font {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-
-/*чем мы занимаемся*/
-
-.doing {
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    bottom: 11px;
-    left: 85px;
-}
-
-.doit {
-    position: relative;
-}
-
-.stripe {
-    content: '';
-    z-index: 1;
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    bottom: 0;
-    background-color: rgba(47, 48, 58, 0.8);
-}
-
-.details {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid white;
-}
-
-.details>.box+.box {
-    margin-left: 30px;
-}
-
-.details>.space+.space {
-    margin-left: 30px;
-}
-
-.texts {
-    margin: 0;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-
-/*Наша команда*/
 
 .name {
     margin-top: 30px;
@@ -908,13 +896,6 @@ main .text {
     margin-bottom: 56px;
     cursor: pointer;
 }
-
-
-/*
-.button-follower:hover,
-.button-follower:focus {
-    background-color: palevioletred;
-}*/
 
 .button-follower::after {
     width: 24px;

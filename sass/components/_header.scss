@@ -1,0 +1,120 @@
+/*Header*/
+
+.unit:hover .link-header-font,
+.unit:focus .link-header-font {
+    color: $--accent-color;
+}
+
+.unit:not(:last-child) {
+    margin-right: 30px;
+}
+
+$fill: currentColor;
+.mark {
+    fill: $fill;
+    margin-right: 10px;
+}
+
+.logo-lin {
+    color: $--text-title;
+    $font-family: raleway, sans-serif;
+    font-family: $font-family;
+    $font-weight: 700;
+    font-weight: $font-weight;
+    $lineheight: 1.19;
+    line-height: $lineheight;
+    $font-size: 26px;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    text-decoration: $text-decoration;
+}
+
+.logo-lin>span {
+    color: $--accent-color;
+}
+
+.link-header-font {
+    bottom: $bottom;
+    $font-weight: 500;
+    font-weight: $font-weight;
+    $font-size: 14px;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    text-decoration: $text-decoration;
+    cursor: $cursor;
+}
+
+.header {
+    display: $display;
+    align-items: $align-items;
+    &-nav {
+        display: $display;
+        align-items: $align-items;
+    }
+}
+
+.site-nav {
+    list-style: $list-style;
+    text-decoration: $text-decoration;
+    display: $display;
+    $margin-left: 85px;
+    margin-left: $margin-left;
+    padding-left: $padding-left;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    &>.item+.item {
+        $margin-left: 50px;
+        margin-left: $margin-left;
+    }
+    & .link-header-font {
+        $display: block;
+        display: $display;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: $--tital-color;
+        transition: $transition;
+    }
+    & .current {
+        color: $--accent-color;
+        $position: relative;
+        position: $position;
+    }
+    & .current::after {
+        content: $content;
+        $position: absolute;
+        position: $position;
+        bottom: $bottom;
+        right: $right;
+        $display: block;
+        display: $display;
+        width: $width;
+        height: 4px;
+        background: $--accent-color;
+        border-radius: 2px;
+    }
+    & .link-header-font:hover,
+    & .link-header-font:focus {
+        color: $--accent-color;
+    }
+}
+
+.auth-nav {
+    $display: inline-flex;
+    display: $display;
+    align-items: $align-items;
+    $margin-left: auto;
+    margin-left: $margin-left;
+    & .link-header-font {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: $transition;
+    }
+    &>.item+.item {
+        margin-left: 30px;
+    }
+    & .link-header-font,
+    main .text {
+        color: $--primary-color;
+    }
+}

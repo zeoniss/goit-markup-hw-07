@@ -1,0 +1,53 @@
+$--primary-white-color: #ffffff;
+$--primary-color: #757575;
+$--tital-color: black;
+$--accent-color: #2196f3;
+$--text-title: #212121;
+$--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$--svg-color: #afb1b8;
+$letter-spacing: 0.03em;
+$margin: 0;
+$padding: 0;
+$list-style: none;
+$text-decoration: none;
+$cursor: pointer;
+$right: 0;
+$bottom: 0;
+$display: flex;
+$align-items: center;
+$padding-left: 0;
+$margin-top: 0;
+$margin-bottom: 0;
+$transition: color 250ms $--timing-function;
+$content: '';
+$width: 100%;
+body {
+    $font-family: Roboto, sans-serif;
+    font-family: $font-family;
+    $letter-spacing: 0.03em;
+    letter-spacing: $letter-spacing;
+}
+
+:root {
+    --primary-white-color: $--primary-white-color;
+    --primary-color: $--primary-color;
+    --accent-color: $--accent-color;
+    --text-title: $--text-title;
+    --timing-function: $--timing-function;
+    --svg-color: $--svg-color;
+}
+
+.break {
+    margin: $margin;
+    padding: $padding;
+    list-style: $list-style;
+    text-decoration: $text-decoration;
+}
+
+.linked {
+    $font-family: inherit;
+    display: $display;
+    font-family: $font-family;
+    text-decoration: $text-decoration;
+    cursor: $cursor;
+}
