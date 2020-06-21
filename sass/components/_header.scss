@@ -9,9 +9,8 @@
     margin-right: 30px;
 }
 
-$fill: currentColor;
 .mark {
-    fill: $fill;
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -19,14 +18,11 @@ $fill: currentColor;
     color: $--text-title;
     $font-family: raleway, sans-serif;
     font-family: $font-family;
-    $font-weight: 700;
-    font-weight: $font-weight;
-    $lineheight: 1.19;
-    line-height: $lineheight;
-    $font-size: 26px;
-    font-size: $font-size;
-    letter-spacing: $letter-spacing;
-    text-decoration: $text-decoration;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo-lin>span {
@@ -34,87 +30,87 @@ $fill: currentColor;
 }
 
 .link-header-font {
-    bottom: $bottom;
-    $font-weight: 500;
-    font-weight: $font-weight;
-    $font-size: 14px;
-    font-size: $font-size;
-    letter-spacing: $letter-spacing;
-    text-decoration: $text-decoration;
-    cursor: $cursor;
+    bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .header {
-    display: $display;
-    align-items: $align-items;
-    &-nav {
-        display: $display;
-        align-items: $align-items;
-    }
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .site-nav {
-    list-style: $list-style;
-    text-decoration: $text-decoration;
-    display: $display;
-    $margin-left: 85px;
-    margin-left: $margin-left;
-    padding-left: $padding-left;
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom;
-    &>.item+.item {
-        $margin-left: 50px;
-        margin-left: $margin-left;
-    }
-    & .link-header-font {
-        $display: block;
-        display: $display;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        color: $--tital-color;
-        transition: $transition;
-    }
-    & .current {
-        color: $--accent-color;
-        $position: relative;
-        position: $position;
-    }
-    & .current::after {
-        content: $content;
-        $position: absolute;
-        position: $position;
-        bottom: $bottom;
-        right: $right;
-        $display: block;
-        display: $display;
-        width: $width;
-        height: 4px;
-        background: $--accent-color;
-        border-radius: 2px;
-    }
-    & .link-header-font:hover,
-    & .link-header-font:focus {
-        color: $--accent-color;
-    }
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-left: 85px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-nav>.item+.item {
+    margin-left: 50px;
+}
+
+.site-nav .link-header-font {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $--title-color;
+    transition: color 250ms $--timing-function;
+}
+
+.site-nav .current {
+    color: $--title-color;
+    position: relative;
+}
+
+.site-nav .current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: $--accent-color;
+    border-radius: 2px;
+}
+
+.site-nav .link-header-font:hover,
+.site-nav .link-header-font:focus {
+    color: $--accent-color;
 }
 
 .auth-nav {
-    $display: inline-flex;
-    display: $display;
-    align-items: $align-items;
-    $margin-left: auto;
-    margin-left: $margin-left;
-    & .link-header-font {
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        transition: $transition;
-    }
-    &>.item+.item {
-        margin-left: 30px;
-    }
-    & .link-header-font,
-    main .text {
-        color: $--primary-color;
-    }
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.auth-nav .link-header-font {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $--timing-function;
+}
+
+.auth-nav>.item+.item {
+    margin-left: 30px;
+}
+
+.auth-nav .link-header-font,
+main .text {
+    color: #757575;
 }

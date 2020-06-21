@@ -5,7 +5,7 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: white;
+    background-color: $--primary-white-color;
 }
 
 .logotype {
@@ -19,27 +19,27 @@
     align-items: center;
     height: 90px;
     min-width: 170px;
-    fill: var(--svg-color);
+    fill: $--svg-color;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition: border 250ms var(--timing-function);
+    transition: border 250ms $--timing-function;
 }
 
 .icon:hover {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    fill: $--accent-color;
+    border: 1px solid $--accent-color;
 }
 
 .icon:active,
 .icon:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    fill: $--accent-color;
+    border: 1px solid $--accent-color;
 }
 
 .brand {
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $--timing-function;
 }
 
 .brand:hover {
-    fill: var(--accent-color);
+    fill: $--accent-color;
 }

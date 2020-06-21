@@ -1,5 +1,5 @@
 .team {
-    background-color: white;
+    background-color: $--primary-white-color;
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0;
@@ -15,7 +15,7 @@
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: $--primary-white-color;
     border-radius: 4px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -24,7 +24,7 @@
     margin-top: 0;
     margin-bottom: 40px;
     padding-top: 200px;
-    color: #ffffff;
+    color: $--primary-white-color;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -42,7 +42,7 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
-    color: var(--text-title);
+    color: $--text-title;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -57,7 +57,7 @@
 .list {
     margin-bottom: 10px;
     margin-top: 30px;
-    color: var(--text-title);
+    color: $--text-title;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -67,16 +67,16 @@
 .erace {
     padding-left: 0;
     list-style: none;
-    color: white;
+    color: $--primary-white-color;
 }
 
 .erace :hover,
 :focus {
-    color: var(--accent-color);
+    color: $--accent-color;
 }
 
 .text {
-    color: #757575;
+    color: $--primary-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -102,18 +102,18 @@
     text-align: center;
     height: 600px;
     list-style: none;
-    background-color: white;
+    background-color: $--primary-white-color;
 }
 
 .middle {
     list-style: none;
-    background-color: white;
+    background-color: $--primary-white-color;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .back {
-    background-color: white;
+    background-color: $--primary-white-color;
     list-style: none;
 }
 
@@ -148,7 +148,7 @@
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $--text-title;
 }
 
 .duty {
@@ -157,7 +157,7 @@
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $--primary-color;
 }
 
 .link .social-link:not(:last-child) {
@@ -179,11 +179,11 @@
     height: 44px;
     border-radius: 50%;
     fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms $--timing-function, background-color 250ms $--timing-function;
 }
 
 .soc:focus,
 .soc:hover {
-    background-color: var(--accent-color);
-    fill: white;
+    background-color: $--accent-color;
+    fill: $--primary-white-color;
 }
