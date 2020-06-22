@@ -1,3 +1,19 @@
+.auth-nav, .details, .com, .link, .logotype, .footer-links, .cont > .item, .detail, .container-flex {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  width: 1200px;
+  height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*Header*/
 .unit:hover .link-header-font,
 .unit:focus .link-header-font {

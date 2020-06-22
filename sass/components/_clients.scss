@@ -9,6 +9,7 @@
 }
 
 .logotype {
+    @extend %break;
     display: flex;
     margin-top: 50px;
 }

@@ -89,6 +89,7 @@
 }
 
 .footer-links {
+    @extend %break;
     display: flex;
 }
 
@@ -158,6 +159,7 @@
 }
 
 .cont>.item {
+    @extend %break;
     margin-top: 9px;
 }
 

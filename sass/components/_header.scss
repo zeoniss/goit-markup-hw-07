@@ -40,6 +40,7 @@
 }
 
 .header {
+    @extend %container;
     display: flex;
     align-items: center;
 }
@@ -94,6 +95,7 @@
 }
 
 .auth-nav {
+    @extend %break;
     display: inline-flex;
     align-items: center;
     margin-left: auto;
