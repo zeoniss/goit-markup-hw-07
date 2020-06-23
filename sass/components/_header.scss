@@ -6,11 +6,10 @@
 
 .unit {
     @extend %break;
-}
-
-&:hover .link-header-font,
-&:focus .link-header-font {
-    color: $--accent-color;
+    &:hover .link-header-font,
+    &:focus .link-header-font {
+        color: $--accent-color;
+    }
 }
 
 .mark {

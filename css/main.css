@@ -1,4 +1,4 @@
-.auth-nav, .details, .com, .link, .logotype, .footer-links, .footer-contact .cont, .cont > .item, .detail, .container-flex {
+.unit, .auth-nav, .details, .com, .link, .logotype, .footer-links, .footer-contact .cont, .cont > .item, .detail, .container-flex {
   margin: 0;
   padding: 0;
   list-style: none;
