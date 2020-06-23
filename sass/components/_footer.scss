@@ -57,11 +57,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
-}
-
-.footer-contacts:hover,
-.footer-contacts:focus {
-    color: $--accent-color;
+    &:hover,
+    &:focus {
+        color: $--accent-color;
+    }
 }
 
 .container .title {
@@ -90,11 +89,10 @@
 .footer-links {
     @extend %break;
     display: flex;
-}
-
-.footer-links a:hover,
-.footer-links a:focus {
-    color: $--accent-color;
+    & a:hover,
+    & a:focus {
+        color: $--accent-color;
+    }
 }
 
 .join-us .footer-links {
@@ -120,18 +118,16 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms $--timing-function;
-}
-
-.link-id:hover {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: $--accent-color;
-}
-
-.link-id:active,
-.link-id:focus {
-    background-color: $--accent-color;
+    &:hover {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: $--accent-color;
+    }
+    &:active,
+    &:focus {
+        background-color: $--accent-color;
+    }
 }
 
 .address,
@@ -142,7 +138,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: $--primary-white-color;
 }
@@ -191,8 +186,8 @@
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid orangered;
     background-repeat: no-repeat;
+    border: 1px solid grey;
     background-position: center;
     background-size: cover;
 }

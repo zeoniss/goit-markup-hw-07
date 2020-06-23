@@ -69,7 +69,7 @@
     list-style: none;
     color: $--primary-white-color;
     & :hover,
-     :focus {
+    & :focus {
         color: $--accent-color;
     }
 }

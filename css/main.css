@@ -984,8 +984,7 @@ main .text {
   text-decoration: none;
 }
 
-.footer-contacts:hover,
-.footer-contacts:focus {
+.footer-contacts:hover, .footer-contacts:focus {
   color: #2196f3;
 }
 
@@ -1060,8 +1059,7 @@ main .text {
   background-color: #2196f3;
 }
 
-.link-id:active,
-.link-id:focus {
+.link-id:active, .link-id:focus {
   background-color: #2196f3;
 }
 
@@ -1073,7 +1071,6 @@ main .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -1121,8 +1118,8 @@ main .text {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid orangered;
   background-repeat: no-repeat;
+  border: 1px solid grey;
   background-position: center;
   background-size: cover;
 }

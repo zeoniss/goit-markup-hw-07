@@ -4,8 +4,12 @@
     margin-right: 30px;
 }
 
-.unit:hover .link-header-font,
-.unit:focus .link-header-font {
+.unit {
+    @extend %break;
+}
+
+&:hover .link-header-font,
+&:focus .link-header-font {
     color: $--accent-color;
 }
 
