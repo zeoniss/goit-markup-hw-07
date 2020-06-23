@@ -25,15 +25,14 @@
     color: $--accent-color;
 }
 
-.footer {
+.footer-page {
     background-color: #2f303a;
     padding-top: 48px;
 }
 
-.footer-flex {
+.footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: baseline;
 }
 
 .foot-studio {
@@ -106,7 +105,7 @@
 
 .join-us {
     margin-bottom: 42px;
-    margin-left: 30px;
+    margin-left: 80px;
 }
 
 .links {
@@ -158,6 +157,10 @@
     text-decoration: none;
 }
 
+.footer-contact .cont {
+    @extend %break;
+}
+
 .cont>.item {
     @extend %break;
     margin-top: 9px;
@@ -195,7 +198,8 @@
 }
 
 .join-form {
-    margin-left: 94px;
+    margin-left: 35px;
+    padding-left: 75px;
     margin-top: 25px;
     margin-bottom: 56px;
 }

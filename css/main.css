@@ -1,4 +1,4 @@
-.auth-nav, .details, .com, .link, .logotype, .footer-links, .cont > .item, .detail, .container-flex {
+.auth-nav, .details, .com, .link, .logotype, .footer-links, .footer-contact .cont, .cont > .item, .detail, .container-flex {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -15,13 +15,13 @@
 }
 
 /*Header*/
+.unit:not(:last-child) {
+  margin-right: 30px;
+}
+
 .unit:hover .link-header-font,
 .unit:focus .link-header-font {
   color: #2196f3;
-}
-
-.unit:not(:last-child) {
-  margin-right: 30px;
 }
 
 .mark {
@@ -113,8 +113,8 @@
   border-radius: 2px;
 }
 
-.site-nav .link-header-font:hover,
-.site-nav .link-header-font:focus {
+.site-nav .current::after .link-header-font:hover,
+.site-nav .current::after .link-header-font:focus {
   color: #2196f3;
 }
 
@@ -236,10 +236,6 @@ main .text {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within > .form-icon {
-  color: #2196f3;
-}
-
 .form-input:focus ~ .form-label {
   color: #2196f3;
 }
@@ -259,8 +255,7 @@ main .text {
   fill: #2196f3;
 }
 
-.form-input:focus,
-.form-input:not(:placeholder-shown) {
+.form-input:focus, .form-input:not(:placeholder-shown) {
   border-color: #2196f3;
   outline: none;
 }
@@ -268,6 +263,10 @@ main .text {
 .form-field {
   position: relative;
   margin-bottom: 28px;
+}
+
+.form-field:focus-within > .form-icon {
+  color: #2196f3;
 }
 
 .form-field .form-label {
@@ -771,8 +770,7 @@ main .text {
   border: 1px solid #2196f3;
 }
 
-.icon:active,
-.icon:focus {
+.icon:active, .icon:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
@@ -877,8 +875,7 @@ main .text {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-list:hover,
-.button-list:focus {
+.button-list:hover, .button-list:focus {
   color: white;
   background: #2196f3;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
@@ -951,21 +948,18 @@ main .text {
   color: #2196f3;
 }
 
-.footer {
+.footer-page {
   background-color: #2f303a;
   padding-top: 48px;
 }
 
-.footer-flex {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .foot-studio {
@@ -1043,7 +1037,7 @@ main .text {
 
 .join-us {
   margin-bottom: 42px;
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 .links {
@@ -1136,7 +1130,8 @@ main .text {
 }
 
 .join-form {
-  margin-left: 94px;
+  margin-left: 35px;
+  padding-left: 75px;
   margin-top: 25px;
   margin-bottom: 56px;
 }

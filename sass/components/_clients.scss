@@ -24,17 +24,15 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border 250ms $--timing-function;
-}
-
-.icon:hover {
-    fill: $--accent-color;
-    border: 1px solid $--accent-color;
-}
-
-.icon:active,
-.icon:focus {
-    fill: $--accent-color;
-    border: 1px solid $--accent-color;
+    &:hover {
+        fill: $--accent-color;
+        border: 1px solid $--accent-color;
+    }
+    &:active,
+    &:focus {
+        fill: $--accent-color;
+        border: 1px solid $--accent-color;
+    }
 }
 
 .brand {

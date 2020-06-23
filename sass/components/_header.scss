@@ -1,12 +1,12 @@
 /*Header*/
 
+.unit:not(:last-child) {
+    margin-right: 30px;
+}
+
 .unit:hover .link-header-font,
 .unit:focus .link-header-font {
     color: $--accent-color;
-}
-
-.unit:not(:last-child) {
-    margin-right: 30px;
 }
 
 .mark {
@@ -87,11 +87,10 @@
     height: 4px;
     background: $--accent-color;
     border-radius: 2px;
-}
-
-.site-nav .link-header-font:hover,
-.site-nav .link-header-font:focus {
-    color: $--accent-color;
+    & .link-header-font:hover,
+    & .link-header-font:focus {
+        color: $--accent-color;
+    }
 }
 
 .auth-nav {

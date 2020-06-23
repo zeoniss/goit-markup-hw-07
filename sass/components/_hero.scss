@@ -76,39 +76,34 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms $--timing-function;
-}
-
-.form-field:focus-within>.form-icon {
-    color: $--accent-color;
-}
-
-.form-input:focus~.form-label {
-    color: $--accent-color;
-}
-
-.form-input:focus+.form-label,
-.form-input:not(:placeholder-shown)+.form-label {
-    transform: translate(-23px, -40px);
-}
-
-.form-input:placeholder-shown {
-    background-color: $--primary-white-color;
-}
-
-.form-input:focus~.form-icon,
-.form-input:not(:placeholder-shown)~.form-icon {
-    fill: $--accent-color;
-}
-
-.form-input:focus,
-.form-input:not(:placeholder-shown) {
-    border-color: $--accent-color;
-    outline: none;
+    &:focus~.form-label {
+        color: $--accent-color;
+    }
+    &:focus+.form-label,
+    &:not(:placeholder-shown)+.form-label {
+        transform: translate(-23px, -40px);
+    }
+    &:placeholder-shown {
+        background-color: $--primary-white-color;
+    }
+    &:focus~.form-icon,
+    &:not(:placeholder-shown)~.form-icon {
+        fill: $--accent-color;
+    }
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-color: $--accent-color;
+        outline: none;
+    }
 }
 
 .form-field {
     position: relative;
     margin-bottom: 28px;
+}
+
+.form-field:focus-within>.form-icon {
+    color: $--accent-color;
 }
 
 .form-field .form-label {
