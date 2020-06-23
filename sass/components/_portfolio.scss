@@ -42,11 +42,6 @@
     display: block;
 }
 
-.optic {
-    position: relative;
-    overflow: hidden;
-}
-
 .message {
     display: flex;
     justify-content: center;
@@ -70,8 +65,18 @@
     margin: 0;
 }
 
-.card:hover .message {
-    opacity: 1;
+.card {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    &:hover .message {
+        opacity: 1;
+    }
+    &:nth-child(3n) {
+        margin-right: 0px;
+    }
 }
 
 .overlays {
@@ -85,21 +90,13 @@
     transform: translateY(100%);
 }
 
-.optic:hover .overlays {
-    transform: translateY(-290px);
-    transition: transform 250ms $--timing-function;
-}
-
-.card {
-    width: 370px;
-    height: 404px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+.optic {
+    position: relative;
     overflow: hidden;
-}
-
-.card:nth-child(3n) {
-    margin-right: 0px;
+    &:hover .overlays {
+        transform: translateY(-290px);
+        transition: transform 250ms $--timing-function;
+    }
 }
 
 .container-flex .card:nth-last-child(-n + 3) {

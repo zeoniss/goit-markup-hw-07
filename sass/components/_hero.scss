@@ -100,30 +100,17 @@
 .form-field {
     position: relative;
     margin-bottom: 28px;
-}
-
-.form-field:focus-within>.form-icon {
-    color: $--accent-color;
-}
-
-.form-field .form-label {
-    position: absolute;
-    top: 50%;
-    left: 42px;
-    transform: translateY(-50%);
-    color: $--primary-color;
-    transition: transform 250ms linear;
-}
-
-.form-coment {
-    width: 100%;
-    resize: none;
-    padding: 12px 0 0 16px;
-    cursor: pointer;
-    white-space: nowrap;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color 250ms $--timing-function;
+    &:focus-within>.form-icon {
+        color: $--accent-color;
+    }
+    & .form-label {
+        position: absolute;
+        top: 50%;
+        left: 42px;
+        transform: translateY(-50%);
+        color: $--primary-color;
+        transition: transform 250ms linear;
+    }
 }
 
 .form-textarea {
@@ -137,16 +124,25 @@
     transition: transform 250ms $--timing-function;
 }
 
-.form-coment:focus+.form-textarea,
-.form-coment:not(:placeholder-shown)+.form-textarea {
-    transform: translateY(-35px);
-    color: $--accent-color;
-}
-
-.form-coment:focus,
-.form-coment:not(:placeholder-shown) {
-    border-color: $--accent-color;
-    outline: none;
+.form-coment {
+    width: 100%;
+    resize: none;
+    padding: 12px 0 0 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms $--timing-function;
+    &:focus+.form-textarea,
+    &:not(:placeholder-shown)+.form-textarea {
+        transform: translateY(-35px);
+        color: $--accent-color;
+    }
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-color: $--accent-color;
+        outline: none;
+    }
 }
 
 .button-submit {

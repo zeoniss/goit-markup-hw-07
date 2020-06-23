@@ -68,11 +68,10 @@
     padding-left: 0;
     list-style: none;
     color: $--primary-white-color;
-}
-
-.erace :hover,
-:focus {
-    color: $--accent-color;
+    & :hover,
+     :focus {
+        color: $--accent-color;
+    }
 }
 
 .text {
@@ -182,10 +181,9 @@
     border-radius: 50%;
     fill: #afb1b8;
     transition: fill 250ms $--timing-function, background-color 250ms $--timing-function;
-}
-
-.soc:focus,
-.soc:hover {
-    background-color: $--accent-color;
-    fill: $--primary-white-color;
+    &:focus,
+    &:hover {
+        background-color: $--accent-color;
+        fill: $--primary-white-color;
+    }
 }
